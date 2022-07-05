@@ -7,20 +7,25 @@ body {
 }
 
 .body1 {
-  /* display: flex; */
+  display: flex;
+  flex-direction: column;
   background-color: #1F2937;
   color: white;
-  padding: 50px;
 }
 
 .body1 .header1 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 0;
+  align-items: flex-start;
+  margin-bottom: 50px;
 }
 
 ul {
   display: flex;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
 }
 
 li {
@@ -33,19 +38,39 @@ li {
   justify-content: space-evenly;
 }
 
-.left {
-  color: #F9FAF8;
-  font-weight: bold; /*should be extra-bold*/
+.left h1 {
+  font-weight: bold; /* should be extra-bold */
   font-size: 48px;
-  display: flex;
-  flex-direction: column;
-
+  flex-wrap: wrap;
+  margin: 0;
 }
 
-/* .body1 img {
+.left button {
+  background-color: #3882F6;
+  color: white;
+  font-weight: bold;
+  width: 120px;
+  margin-top: 8px;
+  padding: 5px; 
+  border-radius: 8px;
+}
+
+.left {
+  color: #E5E7EB;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
   width: 300px;
-  height: 200px;
-} */
+  height: 150x;
+}
+
+.body1 img {
+  display: flex;
+  width: 500px;
+  height: 210px;
+  align-items: center;
+  padding-bottom: 100px;
+}
 
 .body2 {
   background-color: white;
@@ -58,21 +83,50 @@ li {
 .body2 .header1 {
   color: #1F2937;
   font-size: 36px;
-  font-weight: bold; /*should be extra-bold*/
+  font-weight: bold; /* should be extra-bold */
+  padding: 0;
 }
 
-.img {
+.imgs {
+  display: flex;
+  gap: 30px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
+}
+
+.info {
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
+.imgs img {
+  font-size: 15px;
+  border-radius: 10px;
+  display: flex;
+  height: 280px;
+  width: 280px;
+}
+
+
 
 .body3 {
   background-color: #E5E7EB;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   padding: 100px;
-  font: 36px italic #1F2937;
-  
+  font-size: 36px; 
+  color: #1F2937;
+  font-family: italic; /* should be light italic */
+}
+
+.body3 p {
+  text-align: end;
 }
 
 .body4 {
@@ -83,10 +137,27 @@ li {
 
 .shell {
   background-color: #3882F6;
+  color: white;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
-  margin: 50px;
   padding: 50px;
+  width: 1600px;
+}
+
+.shell p {
+  margin-top: 2px;
+  font-weight: normal;
+}
+
+.shell button {
+  background-color: #3882F6;
+  color: white;
+  border-radius: 10px;
+  border-color: white;
+  margin-right: 80px;
+  width: 100px;
+  height: 50px;
 }
 
 .footer {
